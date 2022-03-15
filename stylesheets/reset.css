@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@700&display=swap");
 *,
 *::before,
 *::after {
@@ -32,7 +32,6 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -42,7 +41,6 @@ select {
   font: inherit;
 }
 
-p,
 h1,
 h2,
 h3,

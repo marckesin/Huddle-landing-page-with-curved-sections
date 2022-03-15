@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@700&display=swap");
 *,
 *::before,
 *::after {
@@ -32,7 +32,6 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
 }
 
 input,
@@ -42,7 +41,6 @@ select {
   font: inherit;
 }
 
-p,
 h1,
 h2,
 h3,
@@ -61,8 +59,47 @@ h6 {
   color: #3e52a3;
 }
 
+.btn-pink {
+  color: #ff52bf;
+  border: 1px solid #ff52bf;
+  border-radius: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+}
+.btn-pink:hover {
+  background-color: white;
+  color: #ff8fd8;
+  border: 1px solid #ff8fd8;
+}
+
+.btn-lg-pink {
+  border-radius: 4rem;
+  width: 25rem;
+  height: 5rem;
+  background-color: #ff52bf;
+  font-size: 1.25rem;
+  margin-bottom: 6.5rem;
+}
+.btn-lg-pink:hover {
+  background-color: #ff8fd8;
+  color: white;
+}
+
 .container {
   max-width: 100%;
+}
+
+.container-1 {
+  padding: 0 9.5rem;
+}
+
+.description {
+  padding: 0 12.5rem;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  margin-bottom: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

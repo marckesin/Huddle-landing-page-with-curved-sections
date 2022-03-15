@@ -15,6 +15,47 @@ $very-pale-blue: hsl(207, 100%, 98%);
   }
 }
 
+.btn-pink {
+  color: $pink;
+  border: 1px solid $pink;
+  border-radius: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: $light-pink;
+    border: 1px solid $light-pink;
+  }
+}
+
+.btn-lg-pink {
+  border-radius: 4rem;
+  width: 25rem;
+  height: 5rem;
+  background-color: $pink;
+  font-size: 1.25rem;
+  margin-bottom: 6.5rem;
+
+  &:hover {
+    background-color: $light-pink;
+    color: hsl(0, 0%, 100%);
+  }
+}
+
 .container {
   max-width: 100%;
+}
+
+.container-1 {
+  padding: 0 9.5rem;
+}
+
+.description {
+  padding: 0 12.5rem;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  margin-bottom: 15rem;
 }
