@@ -6,13 +6,41 @@ $light-red: hsl(0, 100%, 63%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $very-pale-blue: hsl(207, 100%, 98%);
 
+@mixin bg-section($url) {
+  height: 10rem;
+  background: url($url);
+  background-repeat: round;
+}
+
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 1rem;
+  margin-top: auto;
 
   a {
-    color: hsl(228, 45%, 44%);
+    color: $very-pale-blue;
   }
+}
+
+.bg-bottom-1 {
+  @include bg-section("../images/bg-section-bottom-desktop-1.svg");
+}
+
+.bg-bottom-2 {
+  @include bg-section("../images/bg-section-bottom-desktop-2.svg");
+}
+
+.bg-footer {
+  @include bg-section("../images/bg-footer-top-desktop.svg");
+}
+
+.bg-top-1 {
+  @include bg-section("../images/bg-section-top-desktop-1.svg");
+}
+
+.bg-top-2 {
+  height: 10rem;
+  background: url("../images/bg-section-top-desktop-2.svg");
+  background-repeat: round;
 }
 
 .btn-pink {
@@ -36,10 +64,23 @@ $very-pale-blue: hsl(207, 100%, 98%);
   background-color: $pink;
   font-size: 1.25rem;
   margin-bottom: 6.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px,
+    rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px,
+    rgba(0, 0, 0, 0.07) 0 16px 16px;
+  border-color: transparent !important;
 
   &:hover {
     background-color: $light-pink;
     color: hsl(0, 0%, 100%);
+  }
+}
+
+.btn-subscribe {
+  background-color: $pink;
+  color: hsl(0, 0%, 100%);
+
+  &:hover {
+    color: $very-pale-blue;
   }
 }
 
@@ -51,11 +92,75 @@ $very-pale-blue: hsl(207, 100%, 98%);
   padding: 0 9.5rem;
 }
 
+.container-2 {
+  background-color: $very-pale-blue;
+  padding: 4rem 8rem;
+}
+
+.container-3 {
+  padding: 4rem 8rem;
+  margin: 8rem 0 4rem;
+}
+
+.container-4 {
+  padding: 4rem 8rem;
+  background-color: $very-pale-blue;
+}
+
+.container-5 {
+  margin-top: 10rem;
+}
+
+.container-footer {
+  background-color: $very-dark-cyan;
+  color: $very-pale-blue;
+  padding: 8rem 8rem 7rem;
+}
+
 .description {
   padding: 0 12.5rem;
   font-size: 1.25rem;
 }
 
+.display-count {
+  font-size: 6rem;
+}
+
+.display-text {
+  font-size: 1.6rem;
+}
+
+.footer-col-left {
+  padding-right: 15rem;
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.footer-col-right {
+  padding-left: 5rem;
+}
+
 .navbar {
   margin-bottom: 15rem;
+}
+
+.newsletter {
+  font-size: 1.6em;
+}
+
+.newsletter-d {
+  font-size: 0.95em;
+  padding-right: 9rem;
+}
+
+@media (max-width: 600px) {
+  .container-1 {
+    padding: 0;
+  }
+
+  .description {
+    padding: 0;
+  }
 }
