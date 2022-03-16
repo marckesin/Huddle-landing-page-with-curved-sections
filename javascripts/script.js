@@ -1,6 +1,6 @@
 function checkEmail() {
-  const email = this.document.getElementById("email");
-  const error = this.document.querySelector(".error");
+  const email = document.querySelector("#email");
+  const error = document.querySelector(".error");
 
   if (!email.value.match(email.pattern)) {
     error.style.visibility = "visible";
@@ -10,3 +10,5 @@ function checkEmail() {
     email.style.borderColor = "hsl(0, 0%, 100%)";
   }
 }
+
+document.getElementById("email").onkeyup = () => checkEmail();
