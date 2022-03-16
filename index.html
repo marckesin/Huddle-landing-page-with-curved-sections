@@ -11,10 +11,6 @@
       href="./images/favicon-32x32.png"
     />
     <!-- Font Awesome -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    /> -->
     <script
       src="https://kit.fontawesome.com/b5bc5c57ac.js"
       crossorigin="anonymous"
@@ -33,7 +29,7 @@
     <div
       class="container d-flex flex-column justify-content-between px-0 pt-lg-4 mt-lg-3"
     >
-      <nav class="navbar pt-3 px-2">
+      <nav class="navbar pt-3 mx-5">
         <div class="container px-3">
           <a class="navbar-brand" href="#">
             <svg width="240" height="39" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +66,7 @@
             class="img-fluid m-auto"
             alt="Screen mockups image"
           />
-          <div class="row row-cols-lg-2 row-cols-1 mt-5">
+          <div class="row row-cols-lg-2 row-cols-1 stats">
             <div class="col d-flex flex-column">
               <div class="m-auto text-center">
                 <svg width="47" height="41" xmlns="http://www.w3.org/2000/svg">
@@ -228,11 +224,32 @@
               </p>
               <i class="fas fa-phone-alt me-3"></i>Phone: +1-543-123-4567
               <br />
-              <i class="fas fa-envelope pe-1 me-3 mt-3"></i>example@huddle.com
-              <div class="d-flex mt-5 pt-3">
-                <i class="fab fa-facebook-square me-4 pe-1 fs-2"></i>
-                <i class="fab fa-instagram me-4 pe-1 fs-2"></i>
-                <i class="fab fa-twitter-square me-4 pe-1 fs-2"></i>
+              <i class="fas fa-envelope me-3 mt-3"></i>example@huddle.com
+              <div class="d-flex mt-5 social-icons pt-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  aria-label="facebook icon"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-square fs-2"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  aria-label="instagram icon"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram fs-2"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  aria-label="twitter icon"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter-square fs-2"></i>
+                </a>
               </div>
             </div>
             <div class="col footer-col-right d-flex flex-column">
@@ -242,14 +259,18 @@
                 weekly newsletter. We&#39;ll never send you spam or pass on your
                 email address
               </p>
-              <div class="d-flex mt-4">
+              <div class="d-flex subscribe-container mt-4">
+                <p class="error">Check your email please</p>
                 <input
                   type="email"
-                  class="form-control me-5"
+                  id="email"
+                  class="form-control me-4"
                   aria-label="email"
-                  aria-describedby="button-addon2"
+                  onkeyup="checkEmail()"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                  value=""
                 />
-                <button class="btn btn-subscribe">Subscribe</button>
+                <button class="btn">Subscribe</button>
               </div>
               <div class="attribution">
                 Challenge by
@@ -267,5 +288,6 @@
         </div>
       </footer>
     </div>
+    <script src="javascripts/script.js"></script>
   </body>
 </html>
