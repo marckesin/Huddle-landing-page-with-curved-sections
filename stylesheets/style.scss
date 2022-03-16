@@ -38,9 +38,7 @@ $very-pale-blue: hsl(207, 100%, 98%);
 }
 
 .bg-top-2 {
-  height: 10rem;
-  background: url("../images/bg-section-top-desktop-2.svg");
-  background-repeat: round;
+  @include bg-section("../images/bg-section-top-desktop-2.svg");
 }
 
 .btn-pink {
@@ -75,21 +73,12 @@ $very-pale-blue: hsl(207, 100%, 98%);
   }
 }
 
-.btn-subscribe {
-  background-color: $pink;
-  color: hsl(0, 0%, 100%);
-
-  &:hover {
-    color: $very-pale-blue;
-  }
-}
-
 .container {
   max-width: 100%;
 }
 
 .container-1 {
-  padding: 0 9.5rem;
+  padding: 0 12.5rem;
 }
 
 .container-2 {
@@ -153,6 +142,46 @@ $very-pale-blue: hsl(207, 100%, 98%);
 .newsletter-d {
   font-size: 0.95em;
   padding-right: 9rem;
+}
+
+.social-icons {
+  gap: 1.6rem;
+
+  a {
+    color: $very-pale-blue;
+  }
+
+  a:hover {
+    color: hsl(180, 100%, 50%);
+  }
+}
+
+.stats {
+  margin: 8rem 0;
+}
+
+.subscribe-container {
+  position: relative;
+
+  button {
+    background-color: $pink;
+    color: hsl(0, 0%, 100%);
+    width: 13rem;
+    font-size: 0.95rem;
+
+    &:hover {
+      color: $very-pale-blue;
+      background-color: $light-pink;
+    }
+  }
+
+  .error {
+    position: absolute;
+    bottom: -2.75rem;
+    font-size: 0.85rem;
+    color: hsl(348, 83%, 47%);
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 600px) {

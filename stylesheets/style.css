@@ -117,20 +117,12 @@ h6 {
   color: white;
 }
 
-.btn-subscribe {
-  background-color: #ff52bf;
-  color: white;
-}
-.btn-subscribe:hover {
-  color: #f5faff;
-}
-
 .container {
   max-width: 100%;
 }
 
 .container-1 {
-  padding: 0 9.5rem;
+  padding: 0 12.5rem;
 }
 
 .container-2 {
@@ -193,6 +185,41 @@ h6 {
 .newsletter-d {
   font-size: 0.95em;
   padding-right: 9rem;
+}
+
+.social-icons {
+  gap: 1.6rem;
+}
+.social-icons a {
+  color: #f5faff;
+}
+.social-icons a:hover {
+  color: aqua;
+}
+
+.stats {
+  margin: 8rem 0;
+}
+
+.subscribe-container {
+  position: relative;
+}
+.subscribe-container button {
+  background-color: #ff52bf;
+  color: white;
+  width: 13rem;
+  font-size: 0.95rem;
+}
+.subscribe-container button:hover {
+  color: #f5faff;
+  background-color: #ff8fd8;
+}
+.subscribe-container .error {
+  position: absolute;
+  bottom: -2.75rem;
+  font-size: 0.85rem;
+  color: #db143c;
+  visibility: hidden;
 }
 
 @media (max-width: 600px) {
