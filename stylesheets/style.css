@@ -224,6 +224,11 @@ h6 {
 }
 
 @media (max-width: 600px) {
+  .attribution {
+    font-size: 0.85rem;
+    margin: 3rem 0;
+  }
+
   .bg-bottom-1 {
     height: 5rem;
     background: url("../images/bg-section-bottom-mobile-1.svg");
@@ -317,7 +322,7 @@ h6 {
   }
 
   .container-footer {
-    padding: 4rem 1.5rem;
+    padding: 4rem 2.4rem;
   }
   .container-footer button {
     width: 8rem;
@@ -326,6 +331,9 @@ h6 {
 .container-footer .footer-col-right {
     padding: 0;
   }
+  .container-footer .newsletter {
+    font-size: 1.4rem;
+  }
   .container-footer .newsletter-d {
     padding: 0;
   }
@@ -333,6 +341,10 @@ h6 {
   .logo {
     width: 7rem;
     height: auto;
+  }
+
+  .logo-footer {
+    width: 12rem;
   }
 
   .navbar {
