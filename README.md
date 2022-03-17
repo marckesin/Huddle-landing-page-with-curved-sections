@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections/badge)](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white
+[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections/badge)](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white)
 
 # Frontend Mentor - Huddle landing page with curved sections solution
 
