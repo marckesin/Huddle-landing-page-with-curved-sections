@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections/badge)](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections)
+[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections/badge)](https://www.codefactor.io/repository/github/marckesin/huddle-landing-page-with-curved-sections) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&logoColor=white
 
 # Frontend Mentor - Huddle landing page with curved sections solution
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Built with
 
-- [Netlify](https://www.netlify.com/) - Build and deploy websites
+- [Render](https://render.com/) - Host static sites, APIs, containers
 - [Bootstrap](https://getbootstrap.com/) - Frontend CSS library
 - Semantic HTML5 markup
 - CSS custom properties
