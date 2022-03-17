@@ -136,8 +136,8 @@ h6 {
 }
 
 .container-4 {
-  padding: 4rem 8rem;
   background-color: #f5faff;
+  padding: 4rem 8rem;
 }
 
 .container-5 {
@@ -161,6 +161,7 @@ h6 {
 
 .display-text {
   font-size: 1.6rem;
+  color: gray;
 }
 
 .footer-col-left {
@@ -223,12 +224,119 @@ h6 {
 }
 
 @media (max-width: 600px) {
-  .container-1 {
+  .bg-bottom-1 {
+    height: 5rem;
+    background: url("../images/bg-section-bottom-mobile-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  .bg-bottom-2 {
+    height: 7rem;
+    background: url("../images/bg-section-bottom-mobile-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  .bg-footer {
+    height: 3rem;
+    background: url("../images/bg-footer-top-desktop.svg");
+    background-repeat: round;
+  }
+
+  .bg-top-1 {
+    height: 7rem;
+    background: url("../images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  .bg-top-2 {
+    height: 6rem;
+    background: url("../images/bg-section-top-mobile-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  .btn-lg-pink {
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-pink {
+    height: 1.6rem;
+    width: 5.5rem;
+    font-size: 0.7rem;
     padding: 0;
   }
 
-  .description {
+  .container-1 {
+    padding: 0 2rem;
+  }
+  .container-1 h1 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .container-1 .description {
+    font-size: 0.9rem;
     padding: 0;
+  }
+  .container-1 .display-count {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  .container-1 .display-text {
+    font-size: 1.1rem;
+  }
+  .container-1 .stats {
+    gap: 6rem;
+  }
+  .container-1 .stats-icon {
+    width: 2rem;
+    height: auto;
+  }
+
+  .container-2,
+.container-3,
+.container-4 {
+    padding: 4rem 2rem;
+  }
+  .container-2 h2,
+.container-3 h2,
+.container-4 h2 {
+    font-size: 1.45rem;
+  }
+  .container-2 p,
+.container-3 p,
+.container-4 p {
+    font-size: 0.85rem;
+  }
+
+  .container-5 {
+    margin-top: 5rem;
+  }
+  .container-5 h2 {
+    font-size: 1.5rem;
+  }
+
+  .container-footer {
+    padding: 4rem 1.5rem;
+  }
+  .container-footer button {
+    width: 8rem;
+  }
+  .container-footer .footer-col-left,
+.container-footer .footer-col-right {
+    padding: 0;
+  }
+  .container-footer .newsletter-d {
+    padding: 0;
+  }
+
+  .logo {
+    width: 7rem;
+    height: auto;
+  }
+
+  .navbar {
+    margin-bottom: 7.5rem;
   }
 }
 

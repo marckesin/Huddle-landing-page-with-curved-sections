@@ -6,10 +6,10 @@ $light-red: hsl(0, 100%, 63%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $very-pale-blue: hsl(207, 100%, 98%);
 
-@mixin bg-section($url) {
-  height: 10rem;
+@mixin bg-section($height, $url, $repeat) {
+  height: $height;
   background: url($url);
-  background-repeat: round;
+  background-repeat: $repeat;
 }
 
 .attribution {
@@ -22,23 +22,31 @@ $very-pale-blue: hsl(207, 100%, 98%);
 }
 
 .bg-bottom-1 {
-  @include bg-section("../images/bg-section-bottom-desktop-1.svg");
+  @include bg-section(
+    10rem,
+    "../images/bg-section-bottom-desktop-1.svg",
+    round
+  );
 }
 
 .bg-bottom-2 {
-  @include bg-section("../images/bg-section-bottom-desktop-2.svg");
+  @include bg-section(
+    10rem,
+    "../images/bg-section-bottom-desktop-2.svg",
+    round
+  );
 }
 
 .bg-footer {
-  @include bg-section("../images/bg-footer-top-desktop.svg");
+  @include bg-section(10rem, "../images/bg-footer-top-desktop.svg", round);
 }
 
 .bg-top-1 {
-  @include bg-section("../images/bg-section-top-desktop-1.svg");
+  @include bg-section(10rem, "../images/bg-section-top-desktop-1.svg", round);
 }
 
 .bg-top-2 {
-  @include bg-section("../images/bg-section-top-desktop-2.svg");
+  @include bg-section(10rem, "../images/bg-section-top-desktop-2.svg", round);
 }
 
 .btn-pink {
@@ -92,8 +100,8 @@ $very-pale-blue: hsl(207, 100%, 98%);
 }
 
 .container-4 {
-  padding: 4rem 8rem;
   background-color: $very-pale-blue;
+  padding: 4rem 8rem;
 }
 
 .container-5 {
@@ -117,6 +125,7 @@ $very-pale-blue: hsl(207, 100%, 98%);
 
 .display-text {
   font-size: 1.6rem;
+  color: hsl(0, 0%, 50%);
 }
 
 .footer-col-left {
@@ -185,11 +194,132 @@ $very-pale-blue: hsl(207, 100%, 98%);
 }
 
 @media (max-width: 600px) {
-  .container-1 {
+  .bg-bottom-1 {
+    @include bg-section(
+      5rem,
+      "../images/bg-section-bottom-mobile-1.svg",
+      no-repeat
+    );
+  }
+
+  .bg-bottom-2 {
+    @include bg-section(
+      7rem,
+      "../images/bg-section-bottom-mobile-2.svg",
+      no-repeat
+    );
+  }
+
+  .bg-footer {
+    @include bg-section(3rem, "../images/bg-footer-top-desktop.svg", round);
+  }
+
+  .bg-top-1 {
+    @include bg-section(
+      7rem,
+      "../images/bg-section-top-mobile-1.svg",
+      no-repeat
+    );
+  }
+
+  .bg-top-2 {
+    @include bg-section(
+      6rem,
+      "../images/bg-section-top-mobile-2.svg",
+      no-repeat
+    );
+  }
+
+  .btn-lg-pink {
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-pink {
+    height: 1.6rem;
+    width: 5.5rem;
+    font-size: 0.7rem;
     padding: 0;
   }
 
-  .description {
-    padding: 0;
+  .container-1 {
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      padding: 0;
+    }
+
+    .display-count {
+      font-size: 4rem;
+      margin-bottom: 0;
+    }
+
+    .display-text {
+      font-size: 1.1rem;
+    }
+
+    .stats {
+      gap: 6rem;
+    }
+
+    .stats-icon {
+      width: 2rem;
+      height: auto;
+    }
+  }
+
+  .container-2,
+  .container-3,
+  .container-4 {
+    padding: 4rem 2rem;
+
+    h2 {
+      font-size: 1.45rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+
+  .container-5 {
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .container-footer {
+    padding: 4rem 1.5rem;
+
+    button {
+      width: 8rem;
+    }
+
+    .footer-col-left,
+    .footer-col-right {
+      padding: 0;
+    }
+
+    .newsletter-d {
+      padding: 0;
+    }
+  }
+
+  .logo {
+    width: 7rem;
+    height: auto;
+  }
+
+  .navbar {
+    margin-bottom: 7.5rem;
   }
 }
